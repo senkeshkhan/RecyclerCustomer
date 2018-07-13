@@ -1,0 +1,124 @@
+<LinearLayout android:layout_height="wrap_content"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <LinearLayout android:layout_height="wrap_content"
+    android:layout_width="match_parent"
+    android:orientation="horizontal"
+    android:weightSum="10"
+    android:background="#ffffff">
+
+
+
+
+    <LinearLayout
+        android:layout_margin="15dp"
+        android:gravity="center"
+        android:layout_weight="3.5"
+        android:background="@drawable/layout_productcoverbg"
+        android:layout_width="0dp"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/im_bin"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+
+            android:src="@mipmap/profile_default"
+            android:layout_width="80dp"
+            android:layout_height="100dp" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="15dp"
+        android:layout_marginRight="15dp"
+        android:gravity="center_vertical"
+        android:orientation="vertical"
+        android:layout_weight="6.5"
+        android:layout_width="0dp"
+        android:layout_height="match_parent">
+
+
+        <TextView
+            android:textSize="14dp"
+            android:id="@+id/txt_address"
+            android:textColor="#000000"
+            android:text="ADDRESS: No, 123, Franklins Road, California, USA."
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:textSize="14dp"
+            android:id="@+id/txt_zipcode"
+            android:layout_marginTop="5dp"
+            android:textColor="#000000"
+            android:text="ZIPCODE: 342256"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:textSize="14dp"
+            android:id="@+id/txt_mobile"
+            android:layout_marginTop="5dp"
+            android:textColor="#000000"
+            android:text="MOBILE: +606305566777"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        
+        <LinearLayout
+            android:weightSum="2"
+            android:orientation="horizontal"
+            android:layout_marginTop="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            
+            <TextView
+                android:textSize="14dp"
+                android:id="@+id/txt_distance"
+                android:layout_weight="1.5"
+                android:textColor="#000000"
+                android:text="DISTANCE: 2KMS"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content" />
+            
+            <LinearLayout
+                android:gravity="right"
+                android:layout_weight=".5"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content">
+                
+                <ImageView
+                    android:src="@mipmap/call"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                
+            </LinearLayout>
+            
+            
+        </LinearLayout>
+        
+
+    </LinearLayout>
+
+    </LinearLayout>
+
+
+    <View
+        android:background="#00FFFFFF"
+        android:layout_width="match_parent"
+        android:layout_height="15dp"/>
+
+
+</LinearLayout>

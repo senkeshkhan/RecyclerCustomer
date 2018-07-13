@@ -1,0 +1,51 @@
+<LinearLayout android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+android:paddingLeft="5dp"
+    android:paddingRight="5dp"
+    android:background="@mipmap/bg"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <include
+        layout="@layout/app_bar_common"
+        />
+
+    <LinearLayout
+        android:gravity="center_vertical"
+        android:background="#ffffff"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:layout_margin="10dp"
+            android:src="@mipmap/search"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <EditText
+            android:maxLines="1"
+            android:hint="search collecting centers by zip code"
+            android:backgroundTint="#ffffff"
+            android:text=""
+            android:focusableInTouchMode="true"
+            android:textSize="16dp"
+            android:layout_gravity="center_vertical"
+            android:textColor="#000000"
+            android:gravity="center_vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+
+    <android.support.v7.widget.RecyclerView
+        android:layout_marginTop="5dp"
+
+        android:id="@+id/recycler_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollIndicators="none" />
+
+</LinearLayout>

@@ -1,0 +1,263 @@
+<LinearLayout 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+
+    >
+
+    <include
+        android:id="@+id/tool"
+        layout="@layout/app_bar_common2"
+        />
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:weightSum="5"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_weight="1.5"
+            android:layout_height="0dp">
+
+
+            <RelativeLayout
+                android:id="@+id/activity_main"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+              >
+
+
+
+                <android.support.v4.view.ViewPager
+                    android:id="@+id/viewPager"
+                    android:layout_width="match_parent"
+                    android:layout_height="140dp"
+                    android:layout_marginBottom="8dp"/>
+
+                <LinearLayout
+                    android:id="@+id/SliderDots"
+                    android:layout_below="@+id/viewPager"
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical|center_horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+
+
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_weight="2.5"
+            android:orientation="vertical"
+            android:weightSum="2"
+            android:layout_height="0dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:weightSum="3"
+                android:layout_weight="1"
+                android:layout_height="0dp">
+
+
+
+                <LinearLayout
+                    android:id="@+id/ll_my_reward_points"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="match_parent"
+                    android:clickable="true"
+                    android:layout_margin="5dp"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:padding="5dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:src="@drawable/myrewardpoints"  />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:padding="5dp"
+
+                        android:minLines="2"
+                        android:fontFamily="@font/roboto_medium"   android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:text="MY REWARD POINTS"/>
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:id="@+id/ll_collection_centers"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="match_parent"
+
+                    android:clickable="true"
+                    android:layout_margin="5dp"
+                    android:orientation="vertical">
+                    <ImageView
+
+                        android:padding="5dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:src="@drawable/collectioncenters"  />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:padding="5dp"
+                        android:minLines=    "2"
+                        android:fontFamily="@font/roboto_medium"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:text="COLLECTION CENTERS"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:id="@+id/ll_my_products"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="match_parent"
+
+                    android:clickable="true"
+                    android:layout_margin="5dp"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:padding="5dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:src="@drawable/myproducts"  />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:padding="5dp"
+
+                        android:minLines="2"
+                        android:fontFamily="@font/roboto_medium" android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:text="MY PRODUCTS"/>
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:weightSum="3"
+                android:layout_weight="1"
+                android:layout_height="0dp">
+
+
+
+                <LinearLayout
+                    android:id="@+id/ll_reward_history"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="match_parent"
+                    android:clickable="true"
+                    android:layout_margin="5dp"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:padding="5dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:src="@drawable/rewardhistory"  />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:padding="5dp"
+                        android:minLines="2"
+                        android:fontFamily="@font/roboto_medium" android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:text="REWARD HISTORY"/>
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:id="@+id/ll_refer_friends"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="match_parent"
+
+                    android:clickable="true"
+                    android:layout_margin="5dp"
+                    android:orientation="vertical">
+                    <ImageView
+
+                        android:padding="5dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:src="@drawable/referfriends" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:padding="5dp"
+                        android:minLines="2"
+                        android:fontFamily="@font/roboto_medium"                                                    android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:text="REFER FERIENDS"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:id="@+id/ll_call_for_collector"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="match_parent"
+
+                    android:clickable="true"
+                    android:layout_margin="5dp"
+                    android:orientation="vertical">
+                    <ImageView
+
+                        android:padding="5dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:src="@drawable/callforcollector" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:padding="5dp"
+
+                        android:minLines="2"
+                        android:fontFamily="@font/roboto_medium" android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:text="CALL FOR A COLLECTOR"/>
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/bg_banner"
+            android:layout_height="0dp"></LinearLayout>
+    </LinearLayout>
+
+
+</LinearLayout>

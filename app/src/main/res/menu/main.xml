@@ -1,0 +1,36 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.vathsav.toolbar.Home">
+    <item android:id="@+id/action_settings"
+        android:title="action_search"
+        android:orderInCategory="100"
+        app:showAsAction="always"
+        android:icon="@mipmap/menu_settings">
+
+    <menu>
+        <item
+            android:id="@+id/menu_profile"
+            android:title="Profile"
+
+            />
+        <item
+            android:id="@+id/menu_logout"
+            android:title="Logout"
+
+            />
+
+
+
+    </menu>
+    </item>
+
+
+
+
+
+
+
+
+
+</menu>

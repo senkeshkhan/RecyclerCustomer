@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="esec.recycler.com.recyclercustomer">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <application
+        android:name=".MvpApp"
+        android:allowBackup="true"
+        android:icon="@drawable/appicon"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/appicon"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".ui.splash.SplashActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".ui.signin.SignInActivity"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".ui.signup.SignUpActivity"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".ui.home.HomeActivity"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".RewardPointsActivity"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".RedeemCommingSoon"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".CollectingCentersActivity"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".MyproductsActivity"
+            android:windowSoftInputMode="stateHidden" />
+        <activity android:name=".InboxActivity" />
+        <activity
+            android:name=".RedeemHistoryActivity"
+            android:windowSoftInputMode="stateHidden" />
+        <activity android:name=".ReferFriendActivity" />
+        <activity
+            android:name=".DidYouCommingSoon"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".CallForCollectorActivity"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".ui.profileedit.ProfileEditActivity"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".ui.forgetpassword.ForgetPasswordActivity"
+            android:windowSoftInputMode="stateHidden" />
+        <activity android:name=".ui.profile.ProfileActivity"
+            android:windowSoftInputMode="stateHidden"></activity>
+
+
+
+
+        <activity android:name=".ui.blogs.BlogActivity">
+           </activity>
+    </application>
+
+</manifest>

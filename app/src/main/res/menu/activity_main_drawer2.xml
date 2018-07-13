@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <!--<item
+            android:id="@+id/reward"
+            android:icon="@mipmap/reward_points"
+            android:title="Reward Points" />-->
+        <item
+            android:id="@+id/deposit"
+            android:icon="@mipmap/collecting_centers"
+            android:title="Deposit Bottles" />
+        <item
+            android:id="@+id/report"
+            android:icon="@mipmap/my_product"
+            android:title="Report" />
+
+        <item
+            android:id="@+id/products"
+            android:icon="@mipmap/redeem_history"
+            android:title="Products" />
+
+        <item
+            android:id="@+id/inbox"
+            android:icon="@mipmap/inbox"
+            android:title="Inbox" />
+        <item
+            android:id="@+id/logout"
+            android:icon="@mipmap/logout"
+            android:title="Logout" />
+
+
+        <!--<item
+            android:id="@+id/nav_manage"
+            android:icon="@drawable/ic_menu_manage"
+            android:title="Tools" />-->
+    </group>
+
+    <!-- <item android:title="Communicate">
+         <menu>
+             <item
+                 android:id="@+id/nav_share"
+                 android:icon="@drawable/ic_menu_share"
+                 android:title="Share" />
+             <item
+                 android:id="@+id/nav_send"
+                 android:icon="@drawable/ic_menu_send"
+                 android:title="Send" />
+         </menu>
+     </item>-->
+
+</menu>

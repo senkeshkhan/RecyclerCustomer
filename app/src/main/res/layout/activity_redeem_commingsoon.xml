@@ -1,0 +1,26 @@
+<RelativeLayout android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@mipmap/bg"
+    android:paddingLeft="5dp"
+    android:paddingRight="5dp"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <include
+        layout="@layout/app_bar_common"/>
+
+   <TextView
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:textSize="28sp"
+       android:gravity="center"
+       android:textStyle="bold"
+       android:layout_centerInParent="true"
+       android:textColor="@color/white"
+       android:text="COMING SOON"/>
+
+
+
+
+</RelativeLayout>
